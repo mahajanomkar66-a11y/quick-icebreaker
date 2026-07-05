@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quick Icebreaker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<div class="glass-card">
+
+<div class="progress">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+<!-- Landing Page -->
+
+<div id="landing" class="page active">
+
+<h1>QUICK ICEBREAKER</h1>
+
+<p class="subtitle">
+This will only take around 30 seconds.
+</p>
+
+<button onclick="startForm()">
+Let's Begin
+</button>
+
+</div>
+
+<!-- Question 1 -->
+
+<div id="q1" class="page">
+
+<h2>Do you know me?</h2>
+
+<label class="option">
+<input type="radio" name="know" value="Yes">
+<span>Yes</span>
+</label>
+
+<label class="option">
+<input type="radio" name="know" value="No">
+<span>No</span>
+</label>
+
+<button onclick="nextQuestion1()">
+Next
+</button>
+
+</div>
+
+<!-- YES PATH -->
+
+<div id="yesPath" class="page">
+
+<h2>
+Oh that's great! So what do you know about me?
+</h2>
+
+<textarea
+id="aboutMe"
+rows="5"
+placeholder="Type your answer here..."
+></textarea>
+
+<button onclick="goToFinalYes()">
+Next
+</button>
+
+</div>
+
+<!-- FINAL YES -->
+
+<div id="finalYes" class="page">
+
+<h2>
+
+Well in that case, I would like to confess that I found you cute and I'd love to know you a bit more.
+
+Let's take this ahead?
+
+</h2>
+
+<label class="option">
+<input
+type="radio"
+name="finalYes"
+value="Leke aur puch puch">
+<span>Leke aur puch puch</span>
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="finalYes"
+value="I too think so">
+<span>I too think so</span>
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="finalYes"
+value="Hmm... you'll have to earn it.">
+<span>Hmm... you'll have to earn it.</span>
+</label>
+
+<button onclick="submitForm('yes')">
+Submit
+</button>
+
+<p class="footer">
+
+The way the Connecting Link connects Pune and Mumbai,
+I wish this form connects us too.
+
+</p>
+
+</div>
+
+<!-- NO PATH -->
+
+<div id="noPath" class="page">
+
+<h2>
+
+Koi na, abhi jaan jaoge.
+
+<br><br>
+
+We matched on Shaadi.com and I found you really cute.
+
+I tried reaching out there, but unfortunately we couldn't connect.
+
+<br><br>
+
+So, would you like to know more about me?
+
+</h2>
+
+<label class="option">
+<input
+type="radio"
+name="finalNo"
+value="Ya sure">
+<span>Ya sure</span>
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="finalNo"
+value="Bit unsure">
+<span>Bit unsure</span>
+</label>
+
+<label class="option">
+<input
+type="radio"
+name="finalNo"
+value="Hmm... you'll have to earn it.">
+<span>Hmm... you'll have to earn it.</span>
+</label>
+
+<button onclick="submitForm('no')">
+Submit
+</button>
+
+<p class="footer">
+
+The way the Connecting Link connects Pune and Mumbai,
+I wish this form connects us too.
+
+</p>
+
+</div>
+
+<!-- THANK YOU -->
+
+<div id="thankyou" class="page">
+
+<h1>Thank you for giving this a chance.</h1>
+
+<p>
+
+Whatever your response was, I genuinely appreciate you taking the time to go through this little icebreaker. Wishing you a wonderful day!
+
+</p>
+
+<p>
+
+Have a wonderful day!
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
